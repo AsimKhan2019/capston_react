@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 body {
@@ -136,7 +137,7 @@ h3 {
   flex-direction: column;
   text-align: right;
   background-color: #cf4378;
-  aspect-ratio: 1px;
+  aspect-ratio: 1/1;
 }
 
 .popItemContainer {
