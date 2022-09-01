@@ -2,9 +2,9 @@ import { useSelector } from 'react-redux';
 import PopulationItem from './PopulationItem';
 
 const PopulationContainer = () => {
-  const { populationItem } = useSelector((store) => store.population);
+  const { Provinces } = useSelector((store) => store.population);
 
-  const populationList = populationItem.slice(1).map((p) => (
+  const populationList = Provinces.slice(1).map((p) => (
     <PopulationItem
       key={p.Id}
       Id={p.Id}

@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-// import PopulationContainer from './Components/PopulationContainer';
 import Home from './Pages/Home';
-// import Details from './Pages/Details';
+import Details from './Pages/Details';
 
 function App() {
   return (
@@ -10,9 +9,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="/details" element={<Details />} /> */}
+        <Route exact path="/details/:id" element={<Details />} />
       </Routes>
-      {/* <PopulationContainer /> */}
     </main>
   );
 }

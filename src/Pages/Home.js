@@ -2,19 +2,19 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Hero from '../Components/Hero';
 import PopulationContainer from '../Components/PopulationContainer';
-import { getPopulationItems } from '../Features/Population/populationSlice';
+import { getForAllProvinces } from '../Features/Population/populationSlice';
 
 const Home = () => {
   const dispatch = useDispatch();
 
-  const populationItem = useSelector((store) => store.population.populationItem);
+  const Provinces = useSelector((store) => store.population.Provinces);
 
   useEffect(() => {
-    if (populationItem.length === 0) dispatch(getPopulationItems());
+    if (Provinces.length === 0) dispatch(getForAllProvinces());
   }, []);
 
-  if (populationItem.length !== 0) {
-    const heroPopulation = populationItem[0];
+  if (Provinces.length !== 0) {
+    const heroPopulation = Provinces[0];
     return (
       <section className="homeContainer">
         <Hero

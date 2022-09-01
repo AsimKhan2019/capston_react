@@ -4,7 +4,7 @@ import { ChevronLeft, MagnifyGlass } from '../icons';
 
 const NavBar = () => (
   <header className="topNav">
-    <NavLink to="/details">
+    <NavLink to="/">
       <ChevronLeft />
     </NavLink>
     <h1>US Population</h1>
