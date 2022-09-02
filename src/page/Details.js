@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Hero from '../componentItems/Hero';
-import { getCountiesForProvince } from '../features/population/populationSlice';
+import { getCountiesForProvince } from '../featureSlice/population/populationSlice';
 import CountyContainer from '../componentItems/CountyContainer';
 
 const Details = () => {
