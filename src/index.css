@@ -35,13 +35,17 @@ a {
   color: #fff;
 }
 
+#root {
+  background-color: #ec4c8a;
+}
+
 main {
   margin: auto;
   display: flex;
   flex-direction: column;
   background-color: #ec4c8a;
   color: white;
-  max-width: 375px;
+  max-width: 1129px;
 }
 
 .topNav {
@@ -172,6 +176,7 @@ h3 {
   flex-grow: 1;
   position: relative;
   text-align: left;
+  overflow: hidden;
 }
 
 .countyItem svg {
@@ -221,4 +226,39 @@ h3 {
 
 .countyItem:nth-child(odd) {
   background: rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 620px) {
+  .popItemContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .popItemContainer a:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .popItemContainer a:nth-child(even) {
+    background: rgba(0, 0, 0, 0.17);
+  }
+}
+
+@media (min-width: 720px) {
+  .hero h2{
+    font-size: 40px;
+  }
+
+  .popItemContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .popItemContainer a:nth-child(n) {
+    background: rgba(0, 0, 0, 0.17);
+  }
+
+  .popItemContainer a:nth-child(8n+1),
+  .popItemContainer a:nth-child(8n+3),
+  .popItemContainer a:nth-child(8n+6),
+  .popItemContainer a:nth-child(8n+8) {
+    background: rgba(0, 0, 0, 0.08);
+  }
 }
