@@ -15,7 +15,6 @@ export const getForAllProvinces = createAsyncThunk('population/getForAllProvince
   async (thunkAPI) => {
     try {
       const resp = await axios(url);
-      // console.log(resp.data);
       resp.data.shift();
       const s = resp.data.map((a) => ({
         Id: a[2],
@@ -23,8 +22,6 @@ export const getForAllProvinces = createAsyncThunk('population/getForAllProvince
         Population: a[1],
         Counties: [],
       })).sort((a, b) => (parseInt(a.Population, 10) > parseInt(b.Population, 10) ? -1 : 0));
-      // return resp.data;
-      // console.log(s);
       return s;
     } catch (err) {
       return thunkAPI.rejectWithValue('something went wrong');
