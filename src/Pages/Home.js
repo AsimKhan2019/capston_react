@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Hero from '../components/Hero';
-import PopulationContainer from '../components/PopulationContainer';
+import Hero from '../componentItems/Hero';
+import PopulationContainer from '../componentItems/PopulationContainer';
 import { getForAllProvinces } from '../features/population/populationSlice';
 
 const Home = () => {
