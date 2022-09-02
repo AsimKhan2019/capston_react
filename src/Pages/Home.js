@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Hero from '../Components/Hero';
-import PopulationContainer from '../Components/PopulationContainer';
-import { getForAllProvinces } from '../Features/Population/populationSlice';
+import Hero from '../components/Hero';
+import PopulationContainer from '../components/PopulationContainer';
+import { getForAllProvinces } from '../features/population/populationSlice';
 
 const Home = () => {
   const dispatch = useDispatch();

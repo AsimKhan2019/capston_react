@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import populationReducer from './Features/Population/populationSlice';
+import populationReducer from './features/population/populationSlice';
 
 const store = configureStore({
   reducer: {
