@@ -165,6 +165,7 @@ h3 {
 
 .popItemContainer a {
   background: rgba(0, 0, 0, 0.17);
+  overflow: hidden;
 }
 
 .popItemContainer a:nth-child(4n+1),
