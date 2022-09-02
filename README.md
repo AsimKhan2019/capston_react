@@ -16,7 +16,6 @@
 - React Router
 
 ## Live Demo (if available)
-[Live Preview](https://asimkhan2019.github.io/LeaderBoard/)
 
 ## Getting Started
 
