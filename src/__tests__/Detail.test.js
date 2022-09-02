@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Routes, Route } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../store';
-import Home from '../Pages/Home';
-import Details from '../Pages/Details';
+import Home from '../page/Home';
+import Details from '../page/Details';
 
 it('Test Detail component with ID', () => {
   const tree = render(
@@ -19,7 +18,7 @@ it('Test Detail component with ID', () => {
           </Routes>
         </Router>
       </Provider>
-    </main>
+    </main>,
   );
   expect(tree).toMatchSnapshot();
 });
