@@ -14,6 +14,7 @@ const Details = () => {
 
   useEffect(() => {
     if (province.Counties.length === 0) dispatch(getCountiesForProvince(id));
+    dispatch(setTitle('County people'));
   }, []);
 
   return (
