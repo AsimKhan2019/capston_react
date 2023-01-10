@@ -16,7 +16,7 @@
 - React Router
 
 ## Live Demo (if available)
-[Live Preview](https://glistening-biscotti-7c4251.netlify.app/)
+[Live Preview](https://us-population-react.netlify.app/)
 
 ## Getting Started
 
